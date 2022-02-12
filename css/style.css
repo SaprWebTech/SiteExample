@@ -1,0 +1,168 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+	margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face { /*подключение шрифта к стилю и прописывание пути к нему*/
+	font-family: ChaletE;
+	src: url("../fonts/ChaletE-LondonSixty.otf");
+}
+
+@font-face {
+	font-family: DINPro;
+	src: url("../fonts/DINPro-CondensedMedium.ttf");
+}
+
+@font-face {
+	font-family: Gilroy;
+	src: url("../fonts/Gilroy-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: GilroyE;
+	src: url("../fonts/Gilroy-ExtraBold.ttf");
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.head-main{
+	width: 100%;
+	background-color: #b37fe8;
+	font-family: Gilroy; /*подключает семейство шрифта к данному классу*/
+	padding: 10px; /*внутренние отступы в блоке (поля)*/
+}
+
+.head-center{
+	display: flex; /*включение технологии flex для данного блока (по умолчанию команда вызовет позиционирование внутренних блоков данного блока по горизонтали*/
+	justify-content: space-between; /*вызовет растягивание дочерних блоков данного блока по всей его ширине*/
+	align-items: center; /*горизонтальные блоки будут выровнены по центру по вертикали*/
+	height: 80px;
+	max-width: 1200px;
+	margin: 0 auto; /*выравнивание блоков по центру*/
+	padding: 10px;
+}
+
+.logo{
+	height: 80%;
+}
+
+.right-block{
+	display: flex;
+	color: white;
+	font-size: 22px;
+}
+
+.menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 500px;
+}
+
+.phones{
+	display: flex;
+	flex-direction: column; /*включает свойства flex для вертикального расположения блоков*/
+	margin-left: 20px; /*внешний отступ слева (блок оттолкнется вправо на 20px)*/
+	height: 55px;
+	justify-content: space-between;
+}
+
+.tel-big{
+	text-align: right;
+	transition: all 300ms; /*плавная анимация*/
+}
+
+.tel-big:hover{ /*hover отвечает за свойство, которое будет включаться только при наведении курсора на объект*/
+	opacity: 0.6; /*прозрачность (изменяется от 0 до 1)*/
+	cursor: pointer; /*курсор изменяется на руку*/
+}
+
+.menu-items{
+	transition: all 300ms;
+}
+
+.menu-items:hover{
+	opacity: 0.6; 
+	cursor: pointer;
+}
+
+.main-page{
+	max-width: 1200px;
+	padding: 0 10px;
+	margin: 20px auto 40px auto;
+}
+
+.up-block{
+	display: flex;
+	justify-content: space-between;
+	height: 400px;
+}
+
+.left-main{
+	width: 74%;
+	padding: 10px;
+	background-image: url(../img/left-back.jpg); /*позволяет установить для блока изображение в качестве фона*/
+	background-size: cover; /*масштабирует это изображение таким образом, чтобы большая его часть была видна (для наглядности лучше просто убрать этот параметр и посмотреть, что будет)*/
+	display: flex;
+	flex-direction: column;	
+	justify-content: flex-end;
+	color: white;
+}
+
+.right-main{
+	width: 24%;
+	background-color: #d8d8d8;
+	font-family: ChaletE; 
+	font-size: 22px;
+	padding: 20px;
+}
+
+.text-left-main{
+	font-size: 62px;
+	font-family: Gilroy;
+}
+
+.text-mini{
+	font-family: ChaletE;
+	font-size: 22px;
+}
+
+.down-block{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.info-card{
+	width: 32%;
+	background-color: #d8d8d8;
+}
+
+.card-up{
+	padding: 20px;
+	background-color: #b37fe8;
+	color: white;
+}
+
+.card-down{
+	padding: 20px;
+}
+
+.card-title{
+	font-size: 28px;
+	font-family: Gilroy;
+}
+
+.card-text{
+	font-size: 24px;
+	font-family: ChaletE;
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+
