@@ -26,10 +26,7 @@
 	src: url("../fonts/Gilroy-ExtraBold.ttf");
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
-}
+a{ text-decoration: none; color: inherit; }
 
 .head-main{
 	width: 100%;
@@ -166,3 +163,78 @@ a{
 	margin-bottom: 10px;
 }
 
+.block__abs{
+	max-width: 1200px;
+	padding: 10px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.back__block{
+	position: absolute;
+	width: 300px;
+	height: 500px;
+	background-color: blue;
+}
+
+.front__block{
+	margin: 50px 0 0 50px;
+	position: relative;
+	width: 300px;
+	height: 500px;
+	background-color: red;
+}
+
+
+@media (max-width: 1030px){ /*свойства, которые находятся внутри этих скобочек будут применятся только тогда, когда ширина окна меньше чем 1030px*/
+	.left-main{
+		width: 58%;
+	}
+	.right-main{
+		width: 40%;
+	}
+	.menu{
+		display: none;
+	}
+}
+
+@media (max-width: 800px){
+	.text-left-main{
+		font-size: 46px;
+	}
+}
+
+@media (max-width: 700px){
+	.down-block{
+		display: block;
+	}
+	.info-card{
+		width: 100%;
+	}
+	.mt-10 { margin-top: 10px !important; }
+	.mb-10 { margin-bottom: 10px !important; }
+}
+
+@media (max-width: 630px){
+	.up-block{
+		display: block;
+		height: auto;
+	}
+	.left-main,
+	.right-main{
+		width: 100%;
+	}
+
+	.left-main{
+		height: 500px;
+	}
+}
+
+@media (max-width: 380px){
+	.right-block{
+		font-size: 16px;
+	}
+	.phones{
+		height: 42px;
+	}
+}
