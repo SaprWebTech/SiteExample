@@ -26,23 +26,23 @@
 	src: url("../fonts/Gilroy-ExtraBold.ttf");
 }
 
-a{ text-decoration: none; color: inherit; }
+a{ text-decoration: none; color: inherit; } /*стили для всех ссылок, которые сбрасывают любые стандартные свойства у ссылок (такие как выделение синим) и позволяют им наследовать свойства у родительского блока*/
 
 .head-main{
-	width: 100%;
+	width: 100%; /*задать ширину блока в пикселях*/
 	background-color: #b37fe8;
 	font-family: Gilroy; /*подключает семейство шрифта к данному классу*/
 	padding: 10px; /*внутренние отступы в блоке (поля)*/
 }
 
 .head-center{
-	display: flex; /*включение технологии flex для данного блока (по умолчанию команда вызовет позиционирование внутренних блоков данного блока по горизонтали*/
+	display: flex; /*включение технологии flex для данного блока (по умолчанию команда вызовет позиционирование внутренних блоков данного блока по горизонтали)*/
 	justify-content: space-between; /*вызовет растягивание дочерних блоков данного блока по всей его ширине*/
-	align-items: center; /*горизонтальные блоки будут выровнены по центру по вертикали*/
-	height: 80px;
-	max-width: 1200px;
+	align-items: center; /*блоки, расположенные горизонтально, будут выровнены относительно горизонтальной оси по центру*/
+	height: 80px; /*задать высоту блока в пикселях*/
+	max-width: 1200px; /*максимальная ширина блока*/
 	margin: 0 auto; /*выравнивание блоков по центру*/
-	padding: 10px;
+	padding: 10px; /*внутренний отступ*/
 }
 
 .logo{
@@ -194,7 +194,7 @@ a{ text-decoration: none; color: inherit; }
 		width: 40%;
 	}
 	.menu{
-		display: none;
+		display: none; /*отключает отображение блока*/
 	}
 }
 
@@ -206,7 +206,7 @@ a{ text-decoration: none; color: inherit; }
 
 @media (max-width: 700px){
 	.down-block{
-		display: block;
+		display: block; /*включает отображение блока*/
 	}
 	.info-card{
 		width: 100%;
@@ -238,3 +238,9 @@ a{ text-decoration: none; color: inherit; }
 		height: 42px;
 	}
 }
+
+
+
+
+
+
